@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "BOJ Practice Problem Adder",
+    "version": "1.0.0",
+    "description": "boj-practice에서 뽑은 문제들을 백준 그룹 연습 생성 시 간편하게 추가해주는 서비스",
+    "icons": {
+        "16": "images/braces16.png",
+        "32": "images/braces32.png",
+        "48": "images/braces48.png",
+        "128": "images/braces128.png"
+    },
+    "permissions": ["activeTab", "scripting", "clipboardRead"],
+    "web_accessible_resources": [
+        {
+          "resources": ["bojScript.js"],
+          "matches": ["https://www.acmicpc.net/*"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup/popup.html"
+    }
+}
